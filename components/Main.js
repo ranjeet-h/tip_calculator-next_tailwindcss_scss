@@ -152,7 +152,7 @@ const Main = () => {
               ${numberOfPeople === null ? tipAmount : totalAmount}
             </h2>
           </div>
-          <div className="pb-2">
+          <div className="pb-2 sm:mt-[10rem]">
             <div className=" p-3 bg-[#26c0ab] text-center text-[#00494d] font-bold text-xl m-4 rounded-lg cursor-pointer" onClick={e => handleReset()}>
               <p className="">RESET</p>
             </div>
