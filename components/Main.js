@@ -21,9 +21,18 @@ const Main = () => {
     calculate();
   }, [value, billAmount, numberOfPeople]);
 
+  const handleReset = () => {
+    setBillAmount(0);
+    setNumberOfPeople(0);
+    setTipAmount(0);
+    setTipAmount(0);
+  }
+  // favicon.ico
+  
+
   return (
-    <div className="xs:bg-white  rounded-t-[2.3rem] mt-5">
-      <div className="mx-6 py-6">
+    <div className="bg-white sm:w-[70vw]  rounded-t-[2.3rem] sm:rounded-xl mt-5 sm:container sm:mx-auto sm:my-24">
+      <div className="mx-6 py-6 sm:grid sm:grid-cols-2 sm:space-x-6">
         <div className="">
           <div className="billAmountInput">
             <h1 className="font-semibold text-gray-500 ">Bill</h1>
@@ -144,7 +153,7 @@ const Main = () => {
             </h2>
           </div>
           <div className="pb-2">
-            <div className=" p-3 bg-[#26c0ab] text-center text-[#00494d] font-bold text-xl m-4 rounded-lg">
+            <div className=" p-3 bg-[#26c0ab] text-center text-[#00494d] font-bold text-xl m-4 rounded-lg cursor-pointer" onClick={e => handleReset()}>
               <p className="">RESET</p>
             </div>
           </div>
