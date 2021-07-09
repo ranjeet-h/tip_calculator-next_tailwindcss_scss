@@ -28,10 +28,10 @@ const Main = () => {
     setTipAmount(0);
   }
   // favicon.ico
-  
+
 
   return (
-    <div className="bg-white sm:w-[70vw]  rounded-t-[2.3rem] sm:rounded-xl mt-5 sm:container sm:mx-auto sm:my-24">
+    <div className="bg-white sm:w-[50vw]  rounded-t-[2.3rem] sm:rounded-xl mt-5 sm:container sm:mx-auto sm:my-24">
       <div className="mx-6 py-6 sm:grid sm:grid-cols-2 sm:space-x-6">
         <div className="">
           <div className="billAmountInput">
